@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caperucita y el Atajo Pitagórico - Lectura</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #viewer {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+
+        #resources {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            border-top: 2px solid #e1e4e8;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+
+        .resource-box {
+            background: #f9fbff;
+            border: 1px solid #dce3f1;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h3 {
+            color: #34495e;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3f7f5f;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        li {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #efefef;
+            transition: transform 0.2s, box-shadow 0.2s;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+        }
+
+        a {
+            text-decoration: none;
+            color: #3f7f5f;
+            font-weight: 600;
+            font-size: 1.1em;
+            display: block;
+        }
+
+        p.desc {
+            margin: 8px 0 0;
+            font-size: 0.9em;
+            color: #666;
+            font-weight: normal;
+        }
+
+        footer {
+            padding: 20px;
+            background: #2c3e50;
+            color: #bdc3c7;
+            font-size: 0.85em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Lector de PDF a pantalla completa -->
+    <iframe id="viewer" src="caperucita_atajo.pdf" type="application/pdf"></iframe>
+
+    <!-- Sección de Recursos Extra -->
+    <section id="resources">
+        <div class="container">
+            <div class="resource-box">
+                <h3>Recursos Extra</h3>
+                <ul>
+                    <li>
+                        <a href="juego/index.html" target="_blank">🎮 Juego Interactivo</a>
+                        <p class="desc">La versión interactiva del atajo del lobo.</p>
+                    </li>
+                    <li>
+                        <a href="ilustracion.jpg" download>🖼️ Ilustración</a>
+                        <p class="desc">Boceto original de la página.</p>
+                    </li>
+                    <li>
+                        <a href="juego/pitagorasDemo.js" download>📜 Código JS</a>
+                        <p class="desc">La lógica de la demostración pitagórica.</p>
+                    </li>
+                    <li>
+                        <a href="caperucita_atajo.pdf" download>📕 Descargar Libro</a>
+                        <p class="desc">El PDF completo para leer offline.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 - Caperucita, el lobo feroz y su atajo pitagórico</p>
+    </footer>
+
+</body>
+</html>
