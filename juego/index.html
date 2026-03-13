@@ -353,12 +353,16 @@ DEMOSTRACIÓN INTERACTIVA
 
 <!-- Configuración de MathJax para fórmulas tipo LaTeX -->
 <script>
-MathJax = {
-  tex: { inlineMath: [['\\(','\\)']] }
-};
+  MathJax = {
+    tex: {
+      inlineMath: [['\\(','\\)']],
+      packages: {'[+]': ['cancel']}
+    }
+  };
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex/extensions/cancel.js"></script>
 
 </body>
 </html>
