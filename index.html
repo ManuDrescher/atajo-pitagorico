@@ -22,37 +22,38 @@
         }
 
         #resources {
-            padding: 40px 20px;
-            background-color: #ffffff;
-            border-top: 2px solid #e1e4e8;
+            padding: 20px 10px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e9ecef;
             text-align: center;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
         h2 {
-            color: #2c3e50;
-            margin-bottom: 25px;
-            font-size: 1.8em;
+            display: none; /* Removed for a cleaner look */
         }
 
         .resource-box {
-            background: #f9fbff;
-            border: 1px solid #dce3f1;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            padding: 0;
+            box-shadow: none;
         }
 
         h3 {
-            color: #34495e;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #3f7f5f;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
             display: inline-block;
-            padding-bottom: 5px;
+            padding-bottom: 3px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         ul {
@@ -62,17 +63,17 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
         }
 
         li {
-            background: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #efefef;
-            transition: transform 0.2s, box-shadow 0.2s;
+            background: rgba(255,255,255,0.5);
+            padding: 10px 15px;
+            border-radius: 6px;
+            border: 1px solid #eee;
+            transition: total 0.2s;
             flex: 1;
-            min-width: 200px;
+            min-width: 160px;
         }
 
         li:hover {
@@ -109,7 +110,7 @@
     <!-- Lector de PDF a pantalla completa -->
     <iframe id="viewer" src="caperucita_atajo.pdf" type="application/pdf"></iframe>
 
-    <!-- Sección de Recursos Extra -->
+    <!-- Sección de Recursos Extra (Estilo Zócalo) -->
     <section id="resources">
         <div class="container">
             <div class="resource-box">
@@ -128,7 +129,7 @@
                         <p class="desc">La lógica de la demostración pitagórica.</p>
                     </li>
                     <li>
-                        <a href="caperucita_atajo.pdf" download>📕 Descargar Libro</a>
+                        <a href="caperucita_atajo.pdf" download>📕 Descargar cuento</a>
                         <p class="desc">El PDF completo para leer offline.</p>
                     </li>
                 </ul>
@@ -137,7 +138,7 @@
     </section>
 
     <footer>
-        <p>© 2026 - Caperucita, el lobo feroz y su atajo pitagórico</p>
+        <p>© 2026 - Caperucita, el lobo feroz y su atajo pitagórico. Manuel Drescher</p>
     </footer>
 
 </body>
